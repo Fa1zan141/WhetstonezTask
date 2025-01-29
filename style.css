@@ -7,6 +7,9 @@
     font-family: Inter, sans-serif;
 }
 body{
+    background-color: #ffffff;
+}
+.MainPage{
     background-color: #4E1C99;
 }
 /*Banner Css*/
@@ -123,10 +126,8 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 650px;
     background-color: white;
-}
-.heroLeftColumn{
-
 }
 .heroLeftColumn-Btn{
     width: 220px;
@@ -148,10 +149,7 @@ body{
 .heroLeftColumn h1{
     color: #333333;
     font-size: 60px;
-    width: 100%;
     font-weight: 600;
-    line-height: 72.61px;
-    text-align: left;
     margin-bottom: 20px;
 }
 .heroLeftColumn h1 span{
@@ -166,19 +164,18 @@ body{
     font-size: 20px;
     font-weight: 500;
     width: 75%;
-    line-height: 24.2px;
-    text-align: left;
 }
 #NoteroPromoSectionbuttons{
     display: flex;
     align-items: center;
     gap: 90px;
+    width: 60%;
     padding: 50px 0 0 0;
 }
 .hero_btn{
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 20px;
     border: transparent;
     background-color: transparent;
 }
@@ -217,10 +214,73 @@ body{
     font-size: 20px;
     font-weight: 500;
 }
-.heroRightColumn{
-    display: flex;
-    align-items: end;
-    justify-items: end;
-}
 .heroRightColumn img{
+    position: relative;
+    margin-top: 250px;
+    z-index: 0;
+}
+.features{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 80px;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+    background-image: url(./Assests/newR.svg);
+    background-size: cover;
+    z-index: 3;
+}
+.features p{
+    color: #333333;
+    font-size: 30px;
+    font-weight: 600;
+}
+.features p span{
+    color: #6953D3;
+}
+.FeatureCompanies{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    gap: 100px;
+}
+.FeatureCompanies img{
+    width: 160px;    
+}
+#line img{
+    width: 1400px;
+}
+.stroke{
+    height: 350px;
+    width: 80%;
+    background-image: url(./Assests/Stroke.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.stroke .feature_icons{
+    padding: 120px 0 0 120px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr 1fr  1fr ;
+    width: 100%;
+}
+.group_icon img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 160px;
+    margin-bottom: 10px;
+}
+.group_icon p{
+    text-align: center;
+    font-size: 17px;
+    width: 200px;
+    text-align: center;
+    font-weight: 700;
 }
