@@ -227,7 +227,7 @@ body{
     gap: 80px;
     flex-direction: column;
     width: 100%;
-    height: 900px;
+    height: 1000px;
     background-image: url(./Assests/newR.svg);
     background-size: cover;
     z-index: 3;
@@ -283,4 +283,115 @@ body{
     width: 200px;
     text-align: center;
     font-weight: 700;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    gap: 200px;
+}
+.registerLeftColumn{
+    display: flex;
+    justify-content: flex-end;
+}
+.registerLeftColumn img{
+    width: 100%;
+    height: 800px;
+}
+.RegisterSection-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.registerRightColumn{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+.ButtonText{
+    width: 200px;
+    height: 50px;
+    background-color: #6953D31F;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ButtonText p{
+    color: #6953D3;
+    font-size: 16px; 
+    font-weight: 500; 
+    text-align: center;
+}
+.RegisterSection-text h1{
+    color: #333333;
+    text-align: justify;
+    font-size: 40px;
+    font-weight: 700;
+}
+.RegisterSection-text h1 span{
+    background: linear-gradient(90.37deg, #6953D3 26.98%, #8566F1 49.72%, #A14EEE 72.46%, #F98085 95.21%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.RegisterSectionMainText h6{
+    color: #44444499;
+    width: 450px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30.01px;
+    text-align: justify;
+}
+.RegisterBenefits{
+    display: flex;
+    flex-direction: column;
+}
+.group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.ImageGroup{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
+.ImageGroup p{
+    color: #1E1E1E;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: justify;
+
+}
+
+.btn_register{
+    background-color: #6953D3;
+    width: 180px;
+    height: 50px;
+    margin-top: 100px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_register:hover{
+    scale: 1.1;
+}
+.btn_register p{
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
 }
