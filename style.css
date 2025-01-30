@@ -123,7 +123,7 @@ body{
     color: #444444;
 }
 .NavMenu{
-    display: None;
+    display: none;
 }
 
 .hero{
@@ -1063,6 +1063,9 @@ body{
     .SocialTabButton{
         margin-top: 60px;
     }
+    .NavMenu{
+        display: none;
+    }
 }
 /* Responsive Breakpoints */
 @media (max-width: 1400px) {
@@ -1090,6 +1093,9 @@ body{
     .FeatureCompanies{
         width: 1300px;
         gap: 40px;
+    }
+    .NavMenu{
+        display: none;
     }
 }
 /* Responsive Breakpoints */
@@ -1279,9 +1285,9 @@ body{
     .FooterBar{
         gap: 100px;
     }
-
-
-
+    .NavMenu{
+        display: none;
+    }
 
 }
 
@@ -1356,5 +1362,58 @@ body{
     .featuresText p{
         font-size: 20px;
     }
+    .FeatureCompanies{
+        padding-right: 50px;
+        width: 700px;
+    }
+    .stroke{
+        width: 800px;
+    }
+    .group_icon img{
+        width: 80px;
+    }
+
+    .group_icon p{
+        font-size: 10px;
+    }
+    .register{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .registerLeftColumn{
+        margin-top: 350px;
+    }
+    .security{
+        flex-direction: column;
+        margin-top: 500px;
+    }
+    .darkTheme{
+        flex-direction: column;
+    }
+    .PopularApp img{
+        width: 700px;
+    }
+    .PhoneImages{
+        gap: 0px;
+    }
+    .PhoneImages img{
+        width: 120px;
+    }
+    .PhoneImages #HandImage{
+        width: 220px;
+    }
+    .Testimonial{
+        flex-direction: column;
+    }
+    .SocialIcons{
+        width: 700px;
+    }
+    .FooterBar{
+        gap: 0px;
+    }
+
 }
 
