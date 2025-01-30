@@ -8,6 +8,7 @@
 }
 body{
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 .MainPage{
     background-color: #4E1C99;
@@ -121,6 +122,10 @@ body{
     justify-content: center;
     color: #444444;
 }
+.NavMenu{
+    display: None;
+}
+
 .hero{
     display: flex;
     justify-content: center;
@@ -266,19 +271,24 @@ body{
     align-items: center;
 }
 .stroke .feature_icons{
-    padding: 120px 0 0 120px ;
+    padding: 120px 0 0 0 ;
     display: grid;
     grid-template-columns: 1fr 1fr  1fr 1fr  1fr ;
     width: 1700px;
 }
+.group_icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
 .group_icon img{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 160px;
+    width: 140px;
     margin-bottom: 10px;
 }
 .group_icon p{
-    text-align: center;
     font-size: 17px;
     width: 200px;
     text-align: center;
@@ -1008,3 +1018,343 @@ body{
     font-weight: 700;
     line-height: 26.48px;
 }
+
+
+
+
+/* Responsive Breakpoints */
+@media (max-width: 1500px) {
+    .NavBar {
+        gap: 130px;
+    }
+    .banner {
+        height: 80px;
+    }
+    .hero{
+        padding-left: 100px;
+    }
+    .heroRightColumn img{
+        margin-top: 280px;
+    }
+    .FeatureCompanies{
+        gap: 60px;
+    }
+    .stroke .feature_icons{
+        padding: 80px 0 0 0 ;
+        width: 1400px;
+    }
+    .register{
+        gap: 100px;
+    }
+    .security{
+        gap: 100px;
+    }
+    .PhoneImages{
+        gap: 70px;
+    }
+    .TestimonialRight{
+        height: 550px;
+        width: 550px;
+    }
+    .TestimonialLeft{
+        height: 550px;
+        width: 550px;
+    }
+    .SocialTabButton{
+        margin-top: 60px;
+    }
+}
+/* Responsive Breakpoints */
+@media (max-width: 1400px) {
+    .NavBar {
+        gap: 100px;
+    }
+    #download_app p{
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .security{
+        gap: 60px;
+    }
+    .register{
+        gap: 80px;
+    }
+    .PhoneImages{
+        gap: 60px;
+    }
+    .stroke .feature_icons{
+        padding: 80px 0 0 0 ;
+        width: 1300px;
+    }
+    .FeatureCompanies{
+        width: 1300px;
+        gap: 40px;
+    }
+}
+/* Responsive Breakpoints */
+@media (max-width: 1028px) {
+    .NavBar {
+        gap: 40px;
+    }
+    .nav-logo{
+        width: 100px;
+        height: 100px;
+        margin-top: 60px;
+    }
+    .NavBar ul{
+        gap: 40px;
+    }
+    .nav-buttons{
+        gap: 2px;
+    }
+    .hero{
+        width: 100%;
+        height: 650px;
+        background-color: white;
+    }
+    .heroLeftColumn{
+        width: 50%;
+    }
+    .heroLeftColumn h1{
+        font-size: 50px;
+        width: 600px;
+    }
+    .heroLeftColumn h2{
+        width: 500px;
+    }
+    #NoteroPromoSectionbuttons{
+        width: 500px;
+    }
+    .heroRightColumn{
+        width: 50%;
+    }
+    .heroRightColumn img{
+        width: 100%;
+        margin-top: 100px;
+    }
+    #download_app p{
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .security{
+        gap: 60px;
+    }
+    .register{
+        gap: 20px;
+    }
+    .registerLeftColumn img{
+        width: 500px;
+        height: 600px;
+    }
+    .registerRightColumn h1{
+        font-size: 40px;
+    }
+    .RegisterSectionMainText h6{
+        font-size: 10px;
+        width: 300px;
+    }
+    .group p{
+        font-size: 10px;
+    }
+    .PhoneImages{
+        gap: 60px;
+    }
+    .stroke .feature_icons{
+        width: 900px;
+
+    }
+    .FeatureCompanies{
+        width: 800px;
+        gap: 20px;
+    }
+    .FeatureCompanies img{
+        width: 120px;
+    }
+    .features{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 60px;
+        flex-direction: column;
+        width: 100%;
+        height: 800px;
+        background-image: url(./Assests/newR.svg);
+        background-size: cover;
+        z-index: 3;
+    }
+    .group_icon{
+        width: 150px;
+    }
+    .group_icon img{
+        width: 120px;
+    }
+    .group_icon p{
+        width: 200px;
+        font-size: 14px;
+    }
+    .security{
+        gap: 10px;
+    }
+    .SecurityNoteRight img{
+        width: 450px;
+        height: 500px;
+    }
+    .SecuritySectionText h1{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .SecuritySectionText p{
+        font-size: 14px;
+        width: 300px;
+    }
+    .SecuritySectionText #TextBlock{
+        width: 400px;
+    }
+    #TextBlock h2{
+        font-size: 10px;
+    }
+    #TextBlock p{
+        font-size: 12px;
+        width: 300px;
+    }
+    #ReadMoreBlock-group{
+        width: 330px;
+    }
+    .darkTheme{
+        gap: 50px;
+    }
+    .DarkThemeLeft img{
+        width: 450px;
+    }
+    .PopularApp img{
+        width: 1000px;
+    }
+    .PhoneImages{
+        gap: 5px;
+    }
+    .PhoneImages img{
+        width: 160px;
+    }
+    .PhoneImages #HandImage{
+        width: 310px;
+    }
+    .Testimonial{
+        gap: 5px;
+    }
+    .TestimonialLeft{
+        width: 400px;
+    }
+    .TestimonialRight{
+        width: 500px;
+    }
+    .review-group{
+        width: 450px;
+        height: 120px;
+    }
+    .testimonials_button{
+        width: 500px;
+    }
+    .social-section{
+        margin-top: 100px;
+    }
+    .SocialIcons{
+        width: 800px;
+    }
+    .socialIcon{
+        width: 400px;
+    }
+    .socialIcon img{
+        width: 50px;
+    }
+    .socialIcon h2{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .socialIcon h2 span{
+        font-size: 10px;
+    }
+    .FooterBar{
+        gap: 100px;
+    }
+
+
+
+
+}
+
+
+@media (max-width: 768px) {
+   
+    .banner {
+        flex-direction: row;
+        height: 50px;
+    }
+
+    .banner h3 {
+        font-size: 15px;
+    }
+    .banner a {
+        font-size: 15px;
+    }
+    .banner button {
+        width: 60px;
+    }
+    .NavBar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 100px;
+        gap: 0;
+    }
+    .NavBar ul {
+        display: none;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: white;
+        width: 100%;
+        padding: 10px 0;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .NavBar ul li {
+        padding: 10px 20px;
+    }
+
+    .NavMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .NavMenu img {
+        width: 30px;
+        height: 30px;
+    }
+    .nav-logo{
+        width: 150px;
+    }
+    .show-menu {
+        display: flex !important;
+        background-color: transparent;
+    }
+    .hero{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 200px;
+    }
+    .heroRightColumn{
+        display: none;
+    }
+    .features{
+        width: 800px;
+    }
+    .featuresText p{
+        font-size: 20px;
+    }
+}
+

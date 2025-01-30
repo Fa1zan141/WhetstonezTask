@@ -35,11 +35,12 @@
     <!--Nav Bar-->
     <nav class="NavBar">
         <div class="nav-logo"></div>
-        <ul>
+        <ul class="nav-items">
             <div class="GroupNav-Home">
                 <li>Home</li><span class="material-symbols-outlined">keyboard_arrow_down</span>
             </div>
-            <div class="GroupNav-Page"><li>Pages</li><span class="material-symbols-outlined">keyboard_arrow_down</span>
+            <div class="GroupNav-Page">
+                <li>Pages</li><span class="material-symbols-outlined">keyboard_arrow_down</span>
             </div>
             <li>Portfolio</li>
             <li>Blog</li>
@@ -49,6 +50,9 @@
             <div class="nav-profile"></div>
             <div class="nav-joinBtn"></div>
         </div>
+        <button class="NavMenu" onclick="toggleNav()">
+            <img src="./Assests/Menu.svg" alt="Menu">
+        </button>
     </nav>
 </div>
     <!--Netero Hero Section-->
@@ -251,7 +255,7 @@
     <section class="PhoneImages">
         <img src="./Assests/3.svg" alt="Image">
         <img src="./Assests/4(1).svg" alt="Image">
-        <img src="./Assests/HandPhoneImage.svg" alt="Image">
+        <img id="HandImage" src="./Assests/HandPhoneImage.svg" alt="Image">
         <img src="./Assests/1(1).svg" alt="Image">
         <img src="./Assests/2(1).svg" alt="Image">
     </section>
@@ -386,5 +390,20 @@
 
     </section>
 
+
+    <script>
+        function toggleNav() {
+            const navMenu = document.querySelector('.NavMenu');
+            const navItems = document.querySelector('.NavBar ul');
+            navMenu.addEventListener('click', () => {
+                navItems.classList.toggle('show-menu');
+            });
+            document.addEventListener('click', (event) => {
+                if (!navMenu.contains(event.target) && !navItems.contains(event.target)) {
+                    navItems.classList.remove('show-menu');
+                 }
+                });
+        }
+    </script>
 </body>
 </html>
